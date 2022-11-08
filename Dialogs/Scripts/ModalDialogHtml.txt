@@ -1,0 +1,21 @@
+<div id="NxModal" style="display:none">
+	<div class="modal-outer">
+		<div class="modal-window animation100 modal-window--large" style="z-index: 2003;">
+			<header>
+				<div class="title-container expandable">
+					<div class="title" id="nxModalTitle"></div>
+					<div class="subtitle"></div>
+				</div>
+				<div class="actions">
+					<div class="close">
+						<button type="button" class="icon-button no-text no-hover no-background" tabindex="0" aria-label="Schließen">
+							<i class="icon ms-Icon ms-Icon--ChromeClose ms-Icon--standard" aria-hidden="true" data-disabled="false" title=""></i>
+						</button>
+					</div>
+				</div>
+			</header>
+			<iframe id="iframe" height="100%"></iframe>
+		</div>
+		<div class="modal-background animation04" style="z-index: 2002;"></div>
+	</div>
+</div>
