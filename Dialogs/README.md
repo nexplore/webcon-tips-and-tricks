@@ -68,7 +68,7 @@ Which would be a good approach anyway.
   In your case we also can open a created Word document in edit-mode.  
   This JavaScript needs to be added to an HTML field on the element opening the dialog. 
   
-  Copy the content of the file [Scripts/ModalDialog.txt](./Scripts/ModalDialog.txt) into the constant.  
+  Copy the content of the file [Snippets/ModalDialog.js](./Snippets/ModalDialog.js) into the constant.  
   The code provides to functions:
  
   ```JavaScript
@@ -94,14 +94,14 @@ Which would be a good approach anyway.
 - **ModalDialogHtml:**  
   HTML template to host the content  
   We use the same header as WEBCON BPS does. In order to display the form we are using an iframe. 
-  Copy the content of the file [Scripts/ModalDialogHtml.txt](./Scripts/ModalDialogHtml.txt) into the constant.  
+  Copy the content of the file [Snippets/ModalDialog.html](./Snippets/ModalDialog.html) into the constant.  
  
   This needs to be added in an HTML field on the element opening the dialog. It makes sense to use the same HTML field as for the JavaScript
 - **MakeItModal:**  
   More JavaScript to do some UI adjustments in the modal dialog  
   We strip the header of the form and also the side panel.  
   In addition, we add a back-button, which simply closes the dialog without executing an action  
-   Copy the content of the file [Scripts/MakeItModal.txt](./Scripts/MakeItModal.txt.txt) into the constant.  
+   Copy the content of the file [./Snippets/MakeItModal.js](./Snippets/MakeItModal.js) into the constant.  
  
 We also create a set of business rules to start a workflow and show an existing element as a modal dialog  
 It is a much better way to provide business rules with proper parameters than creating the JavaScript manually every time  
