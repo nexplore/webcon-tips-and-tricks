@@ -106,7 +106,7 @@ Which would be a good approach anyway.
 We also create a set of business rules to start a workflow and show an existing element as a modal dialog  
 It is a much better way to provide business rules with proper parameters than creating the JavaScript manually every time  
 
-![Modal dialog content](./Assets/Global-business-rules.png)  
+![Modal dialog content](./Assets/global-business-rules.png)  
 
 Unfortunately sharing business rules are, apart from import/export a solution not easy to share. So we just outline what the business rules are doing.    
 
