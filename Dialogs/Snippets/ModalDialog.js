@@ -22,7 +22,6 @@
 
 	nxbps.modal.closeDlg = function(closeAction, param1, param2) 
 	{
-	   debugger;
 		if (closeAction != undefined) {
 		   if (closeAction == nxbps.modal.dlgCloseOptions.close) {
 				if (typeof nxbps.modal.onClosing === "function") {

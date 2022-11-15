@@ -16,7 +16,8 @@ function addCancelButton() {
         console.log('Make it Modal');
         $(".ms-promotedActionButton-text").hide();
         $el = $(".pathPanelRow").prepend($(".path-button-container").first().wrapAll('<div>').parent().html());
-        $(".pathPanelButton:first").attr("style", "background-color: rgb(0, 0, 70);")
+        // https://daniels-notes.de/posts/2021/path-button-styling#css-attribute-selectors-are-the-alternative-to-a-css-class
+        // $(".pathPanelButton:first").attr("style", "background-color: rgb(0, 0, 70);")
         $(".pathPanelButton:first").attr("value",'Abbrechen')
         $(".pathPanelButton:first .form-button__title").text('Abbrechen')
         $(".pathPanelButton:first").click(function(){parent.nxbps.modal.closeDlg(1)})

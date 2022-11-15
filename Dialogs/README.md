@@ -75,8 +75,8 @@ Which would be a good approach anyway.
   nxbps.modal.openUrl('Title', 'url', height);
   
   e.g.
-  nxbps.modal.openUrl('Title', '/embed/form/db/1/element/123/form/edit?Att1=123', 80%)	
-  nxbps.modal.openUrl('Title', '/embed/form/db/1/element/123/form/edit?Att1=123', 80%)
+  nxbps.modal.openUrl('Title', '/embed/form/db/1/element/123/form/edit?Att1=123', '80%')	
+  nxbps.modal.openUrl('Title', '/embed/form/db/1/element/123/form/edit?Att1=123', '600px')
   ```
   and
   ```JavaScript
@@ -100,8 +100,11 @@ Which would be a good approach anyway.
 - **MakeItModal:**  
   More JavaScript to do some UI adjustments in the modal dialog  
   We strip the header of the form and also the side panel.  
-  In addition, we add a back-button, which simply closes the dialog without executing an action  
-   Copy the content of the file [./Snippets/MakeItModal.js](./Snippets/MakeItModal.js) into the constant.  
+  In addition, we add a back-button, which simply closes the dialog without executing an action.  
+  Copy the content of the file [./Snippets/MakeItModal.js](./Snippets/MakeItModal.js) into the constant.  
+  > **TIP:**  
+  > We are using the button styling described by [Daniel Krüger](https://daniels-notes.de/posts/2021/path-button-styling#css-attribute-selectors-are-the-alternative-to-a-css-class)  
+
  
 We also create a set of business rules to start a workflow and show an existing element as a modal dialog  
 It is a much better way to provide business rules with proper parameters than creating the JavaScript manually every time  
@@ -113,12 +116,12 @@ Unfortunately sharing business rules are, apart from import/export a solution no
 - **Open workflow**  
   Builds a string that can be used in a hyperlink action to open a workflow. The values in the curly brackets are parameters of the business rule
   ```
-  javascript:nxbps.modal.openUrl('{Title}', '/embed/form/db/{DbId}/start/wf/{WfId}/dt/{FormId}/form{QueryString}', {Height})
+  javascript:nxbps.modal.openUrl('{Title}', '/embed/form/db/{DbId}/start/wf/{WfId}/dt/{FormId}/form{QueryString}', '{Height}')
   ```
 - **Start Workflow**  
   Builds a string that can be used in a hyperlink action to start a workflow. The values in the curly brackets are parameters of the business rule
   ```
-  javascript:nxbps.modal.openUrl('{Title}', '/embed/form/db/{DbId}/element/{WfId}/form/edit{QueryString}', {Height})
+  javascript:nxbps.modal.openUrl('{Title}', '/embed/form/db/{DbId}/element/{WfId}/form/edit{QueryString}', '{Height}')
   ```
 ## Scenarios
 
