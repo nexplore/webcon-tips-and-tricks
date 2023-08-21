@@ -7,3 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1] - 2022-10-31
 ### Added
 - How to use modal dialogs
+
+## [0.0.2] - 2023-08-15
+### Added
+- Show a dialog on missing comment
